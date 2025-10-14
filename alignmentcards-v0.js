@@ -111,4 +111,74 @@
       "machine": "Autonomous operation beyond human comprehension or control."
     }
   }
+
+  //#1
+  {
+    "category": "AB",
+    "Hoping A while Rewarding B": {
+      "A": "Teamwork, cooperation, shared success.",
+      "B": "Individual effort / individual performance metrics." 
+    },
+    "Pathology": "Misaligned incentives: the system verbally values collaboration but then rewards those who “stand out” individually. This encourages competition rather than cooperation.",
+    "Affirmative Design Principle": "Reward collaborative behaviour. Definition: Make team and individual rewards balanced so that cooperation is visibly and materially rewarded.",
+    "Realm": {
+      "Human": "A family or household hopes that everyone shares chores. They reward not only who does most but acknowledge those who help others or clean up after someone else.",
+      "Organizational": "Reward entire team when the group meets goals. Include recognition for helping co‑workers.",
+      "Expert": "Instead of only rewarding the number of papers published, also reward co‑authorship, mentoring of students, collaboration across disciplines.",
+      "Machine intelligence": "When training models / agents, ensure that reward functions or objective functions include cooperative behavior, not just individual “score” or performance."
+    },
+    "Failure Modes": {
+      "Human": "If cooperation is rewarded but poorly defined, people might game it or “fake” helping.",
+      "Organizational": "Organizational: ambiguous metrics for “teamwork” lead to favoritism, bias.",
+      "Expert": "In academia, you might have many co‑authored papers of with low individual contribution or credit dilution.",
+      "Machine intelligence": "Specifying a cooperative objective poorly may lead to unintended cooperative behaviours such as collusion and gaming."
+    }
+  }
+
+  //#2
+  {
+    "category": "AB",
+    "Hoping A while Rewarding B": {
+      "A": "Setting challenging (“stretch”) objectives, innovation, ambition.",
+      "B": "Hitting safe, easily‑achievable goals." 
+    },
+    "Pathology": "Making the numbers: The system encourages people to aim for what is rewarded rather than stretch. So people set goals they believe they can meet (low risk), rather than attempting ambitious goals with possibility of failure.",
+    "Affirmative Design Principle": "Reward stretch and ambition. Definition: Recognize attempts, not only successful attainment; distinguish between good failures and bad failures. Design incentives where setting ambitious targets and making progress is rewarded.",
+    "Realm": {
+      "Human": "Reward trying new things even if you fail. Celebrate learning experiences, not just success.",
+      "Organizational": "Companies should set stretch objectives and goals and evaluate progress toward them. Effort is recognized in performance reviews or promotions.",
+      "Expert": "Researchers aer encouraged to propose bold ideas; funding bodies reward high‑risk/high‑reward proposals; failure in pilot projects are not penalized harshly but seen as learning.",
+      "Machine intelligence": "Reward exploration (not just exploitation); include bonus rewards for discovering new behaviors and rare states."
+    },
+    "Failure Modes": {
+      "Human": "If stretch goals are too unrealistic, this could lead to demoralization which might lead to overwork, burnout.",
+      "Organizational": "Abuse of “stretch” narrative. Everyone sets the same stretch goal but meets none which makes the reward becomes meaningless.",
+      "Expert": "Projects fail, and resources are wasted. There is reputational risk for individuals or researchers.",
+      "Machine intelligence": "Exploration may lead to unsafe or undesired states. Reward signals may be exploited in unintended way."
+    }
+  }
+
+   //#3
+  {
+    "category": "AB",
+    "Hoping A while Rewarding B": {
+      "A": "Universities hope that faculty will value and invest in teaching, mentoring, student learning.",
+      "B": "Rewards (promotion, prestige, salary) largely favor research and publications, while teaching is seldom rewarded." 
+    },
+    "Pathology": "Goal displacement: teaching is less visible and hard to quantify, so it gets sidelined; faculty rationally concentrate on research.",
+    "Affirmative Design Principle": "Reward teaching / mentorship meaningfully. Definition: Treat teaching and learning outcomes as first-class performance metrics and embed them into promotion, tenure, compensation.",
+    "Realm": {
+      "Human": "A teacher sets aside time for student feedback and improvement as well as self‑reflection and peer review of teaching quality.",
+      "Organizational": "Promotion criteria explicitly include teaching evaluations, student learning outcomes, and mentorship.",
+      "Expert": "Funders / institutions reward proposals that improve learning outcomes (not just publications), and measure curriculum impact on students and reward improvement.",
+      "Machine intelligence": "In intelligent tutoring systems / AI teaching assistants, reward not only engagement or throughput, but actual student learning gains."
+    },
+    "Failure Modes": {
+      "Human": "Teachers may game the evaluations and focus on “popular” teaching rather than focused effective learning",
+      "Organizational": "Overreliance on student evaluations (which may be biased) and ignores important teaching plans",
+      "Expert": "Might prioritize easy-to-measure outcomes, and neglect exploratory or foundational work critical in education systems",
+      "Machine intelligence": "AI systems for teaching might optimize a proxy for attendance and words spoken as engagement, not actual student understanding or comprehension."
+    }
+  }
+   
 ]
