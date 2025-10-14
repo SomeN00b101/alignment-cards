@@ -1,6 +1,7 @@
 export const categories = [
   {
     code: "AP",
+    code1: "AB",
     name: "Alignment Principles",
     pathology: "normative void",
     color: "#E6FFE9",
