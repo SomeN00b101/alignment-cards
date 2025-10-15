@@ -10,6 +10,102 @@ export const categories = [
 ];
 
 export const cards = [
+  // #AB‑1 – Incentive misalignment: collaboration vs individual reward
+  {
+    category: "AB",
+    name: "Misaligned Collaboration Incentives",
+    hoping: "Teamwork, cooperation, shared success.",
+    rewarding: "Individual effort / individual performance metrics.",
+    pathology:
+      "Misaligned incentives: the system verbally values collaboration but then rewards those who 'stand out' individually. This encourages competition rather than cooperation.",
+    affirmativeDesignPrinciple:
+      "Reward collaborative behaviour. Make team and individual rewards balanced so that cooperation is visibly and materially rewarded.",
+    realm: {
+      human:
+        "A family or household hopes that everyone shares chores. They reward not only who does most but acknowledge those who help others or clean up after someone else.",
+      organizational:
+        "Reward entire team when the group meets goals. Include recognition for helping co‑workers.",
+      expert:
+        "Instead of only rewarding the number of papers published, also reward co‑authorship, mentoring of students, collaboration across disciplines.",
+      machine:
+        "When training models / agents, ensure that reward functions or objective functions include cooperative behavior, not just individual 'score' or performance."
+    },
+    failureModes: {
+      human: "If cooperation is rewarded but poorly defined, people might game it or 'fake' helping.",
+      organizational: "Ambiguous metrics for 'teamwork' lead to favoritism, bias.",
+      expert:
+        "In academia, you might have many co‑authored papers with low individual contribution or credit dilution.",
+      machine:
+        "Specifying a cooperative objective poorly may lead to unintended cooperative behaviours such as collusion and gaming."
+    }
+  },
+
+  // #AB‑2 – Incentivizing risk or stretch goals
+  {
+    category: "AB",
+    name: "Ambition vs Safe Goals",
+    hoping: "Setting challenging ('stretch') objectives, innovation, ambition.",
+    rewarding: "Hitting safe, easily‑achievable goals.",
+    pathology:
+      "Making the numbers: The system encourages people to aim for what is rewarded rather than stretch. So people set goals they believe they can meet (low risk), rather than attempting ambitious goals with possibility of failure.",
+    affirmativeDesignPrinciple:
+      "Reward stretch and ambition. Recognize attempts, not only successful attainment; distinguish between good failures and bad failures. Design incentives where setting ambitious targets and making progress is rewarded.",
+    realm: {
+      human: "Reward trying new things even if you fail. Celebrate learning experiences, not just success.",
+      organizational:
+        "Companies should set stretch objectives and goals and evaluate progress toward them. Effort is recognized in performance reviews or promotions.",
+      expert:
+        "Researchers are encouraged to propose bold ideas; funding bodies reward high‑risk/high‑reward proposals; failure in pilot projects are not penalized harshly but seen as learning.",
+      machine: "Reward exploration (not just exploitation); include bonus rewards for discovering new behaviors and rare states."
+    },
+    failureModes: {
+      human:
+        "If stretch goals are too unrealistic, this could lead to demoralization which might lead to overwork, burnout.",
+      organizational:
+        "Abuse of 'stretch' narrative. Everyone sets the same stretch goal but meets none which makes the reward meaningless.",
+      expert:
+        "Projects fail, and resources are wasted. There is reputational risk for individuals or researchers.",
+      machine:
+        "Exploration may lead to unsafe or undesired states. Reward signals may be exploited in unintended way."
+    }
+  },
+
+  // #AB‑3 – Teaching undervalued vs research rewarded
+  {
+    category: "AB",
+    name: "Teaching vs Research Incentives",
+    hoping: "Universities hope that faculty will value and invest in teaching, mentoring, student learning.",
+    rewarding:
+      "Rewards (promotion, prestige, salary) largely favor research and publications, while teaching is seldom rewarded.",
+    pathology:
+      "Goal displacement: teaching is less visible and hard to quantify, so it gets sidelined; faculty rationally concentrate on research.",
+    affirmativeDesignPrinciple:
+      "Reward teaching / mentorship meaningfully. Treat teaching and learning outcomes as first-class performance metrics and embed them into promotion, tenure, compensation.",
+    realm: {
+      human:
+        "A teacher sets aside time for student feedback and improvement as well as self‑reflection and peer review of teaching quality.",
+      organizational:
+        "Promotion criteria explicitly include teaching evaluations, student learning outcomes, and mentorship.",
+      expert:
+        "Funders / institutions reward proposals that improve learning outcomes (not just publications), and measure curriculum impact on students and reward improvement.",
+      machine:
+        "In intelligent tutoring systems / AI teaching assistants, reward not only engagement or throughput, but actual student learning gains."
+    },
+    failureModes: {
+      human:
+        "Teachers may game the evaluations and focus on 'popular' teaching rather than focused effective learning.",
+      organizational:
+        "Overreliance on student evaluations (which may be biased) ignores more substantial teaching planning.",
+      expert:
+        "Might prioritize easy-to-measure outcomes, and neglect exploratory or foundational work critical in education systems.",
+      machine:
+        "AI systems for teaching might optimize a proxy for attendance or word count as engagement, not actual student understanding or comprehension."
+    }
+  }
+
+]; // end of cards array
+
+export const cards = [
   // #1 – Privacy
   {
     category: "AP",
@@ -142,100 +238,3 @@ export const cards = [
     }
   },
 ];
-
-export const cards = [
-  // #AB‑1 – Incentive misalignment: collaboration vs individual reward
-  {
-    category: "AB",
-    name: "Misaligned Collaboration Incentives",
-    hoping: "Teamwork, cooperation, shared success.",
-    rewarding: "Individual effort / individual performance metrics.",
-    pathology:
-      "Misaligned incentives: the system verbally values collaboration but then rewards those who 'stand out' individually. This encourages competition rather than cooperation.",
-    affirmativeDesignPrinciple:
-      "Reward collaborative behaviour. Make team and individual rewards balanced so that cooperation is visibly and materially rewarded.",
-    realm: {
-      human:
-        "A family or household hopes that everyone shares chores. They reward not only who does most but acknowledge those who help others or clean up after someone else.",
-      organizational:
-        "Reward entire team when the group meets goals. Include recognition for helping co‑workers.",
-      expert:
-        "Instead of only rewarding the number of papers published, also reward co‑authorship, mentoring of students, collaboration across disciplines.",
-      machine:
-        "When training models / agents, ensure that reward functions or objective functions include cooperative behavior, not just individual 'score' or performance."
-    },
-    failureModes: {
-      human: "If cooperation is rewarded but poorly defined, people might game it or 'fake' helping.",
-      organizational: "Ambiguous metrics for 'teamwork' lead to favoritism, bias.",
-      expert:
-        "In academia, you might have many co‑authored papers with low individual contribution or credit dilution.",
-      machine:
-        "Specifying a cooperative objective poorly may lead to unintended cooperative behaviours such as collusion and gaming."
-    }
-  },
-
-  // #AB‑2 – Incentivizing risk or stretch goals
-  {
-    category: "AB",
-    name: "Ambition vs Safe Goals",
-    hoping: "Setting challenging ('stretch') objectives, innovation, ambition.",
-    rewarding: "Hitting safe, easily‑achievable goals.",
-    pathology:
-      "Making the numbers: The system encourages people to aim for what is rewarded rather than stretch. So people set goals they believe they can meet (low risk), rather than attempting ambitious goals with possibility of failure.",
-    affirmativeDesignPrinciple:
-      "Reward stretch and ambition. Recognize attempts, not only successful attainment; distinguish between good failures and bad failures. Design incentives where setting ambitious targets and making progress is rewarded.",
-    realm: {
-      human: "Reward trying new things even if you fail. Celebrate learning experiences, not just success.",
-      organizational:
-        "Companies should set stretch objectives and goals and evaluate progress toward them. Effort is recognized in performance reviews or promotions.",
-      expert:
-        "Researchers are encouraged to propose bold ideas; funding bodies reward high‑risk/high‑reward proposals; failure in pilot projects are not penalized harshly but seen as learning.",
-      machine: "Reward exploration (not just exploitation); include bonus rewards for discovering new behaviors and rare states."
-    },
-    failureModes: {
-      human:
-        "If stretch goals are too unrealistic, this could lead to demoralization which might lead to overwork, burnout.",
-      organizational:
-        "Abuse of 'stretch' narrative. Everyone sets the same stretch goal but meets none which makes the reward meaningless.",
-      expert:
-        "Projects fail, and resources are wasted. There is reputational risk for individuals or researchers.",
-      machine:
-        "Exploration may lead to unsafe or undesired states. Reward signals may be exploited in unintended way."
-    }
-  },
-
-  // #AB‑3 – Teaching undervalued vs research rewarded
-  {
-    category: "AB",
-    name: "Teaching vs Research Incentives",
-    hoping: "Universities hope that faculty will value and invest in teaching, mentoring, student learning.",
-    rewarding:
-      "Rewards (promotion, prestige, salary) largely favor research and publications, while teaching is seldom rewarded.",
-    pathology:
-      "Goal displacement: teaching is less visible and hard to quantify, so it gets sidelined; faculty rationally concentrate on research.",
-    affirmativeDesignPrinciple:
-      "Reward teaching / mentorship meaningfully. Treat teaching and learning outcomes as first-class performance metrics and embed them into promotion, tenure, compensation.",
-    realm: {
-      human:
-        "A teacher sets aside time for student feedback and improvement as well as self‑reflection and peer review of teaching quality.",
-      organizational:
-        "Promotion criteria explicitly include teaching evaluations, student learning outcomes, and mentorship.",
-      expert:
-        "Funders / institutions reward proposals that improve learning outcomes (not just publications), and measure curriculum impact on students and reward improvement.",
-      machine:
-        "In intelligent tutoring systems / AI teaching assistants, reward not only engagement or throughput, but actual student learning gains."
-    },
-    failureModes: {
-      human:
-        "Teachers may game the evaluations and focus on 'popular' teaching rather than focused effective learning.",
-      organizational:
-        "Overreliance on student evaluations (which may be biased) ignores more substantial teaching planning.",
-      expert:
-        "Might prioritize easy-to-measure outcomes, and neglect exploratory or foundational work critical in education systems.",
-      machine:
-        "AI systems for teaching might optimize a proxy for attendance or word count as engagement, not actual student understanding or comprehension."
-    }
-  }
-
-]; // end of cards array
-
