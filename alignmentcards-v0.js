@@ -1,7 +1,6 @@
 export const categories = [
   {
     code: "AP",
-    code1: "AB",
     name: "Alignment Principles",
     pathology: "normative void",
     color: "#E6FFE9",
@@ -142,7 +141,9 @@ export const cards = [
       machine: "Autonomous operation beyond human comprehension or control."
     }
   },
+];
 
+export const cards = [
   // #AB‑1 – Incentive misalignment: collaboration vs individual reward
   {
     category: "AB",
