@@ -101,11 +101,7 @@ export const cards = [
       machine:
         "AI systems for teaching might optimize a proxy for attendance or word count as engagement, not actual student understanding or comprehension."
     }
-  }
-
-]; // end of cards array
-
-export const cards = [
+  },
   // #1 – Privacy
   {
     category: "AP",
@@ -236,5 +232,5 @@ export const cards = [
       professional: "Failure to define or enforce thresholds for human intervention during research or related exploratory work.",
       machine: "Autonomous operation beyond human comprehension or control."
     }
-  },
+  }
 ];
